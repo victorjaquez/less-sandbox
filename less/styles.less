@@ -11,6 +11,16 @@ body {
   line-height: @line-height;
 }
 
+// mixin
+.bordered{
+  border-top: dotted 1px #000;
+  border-bottom: solid 2px #000;
+}
+
+h1, h3 {
+  .bordered
+}
+
 .primary-text {
   color: @primary-color;
 }
@@ -20,6 +30,7 @@ body {
   border: 0;  
 }
 
+// extending class
 .primary-btn:extend(.btn) {
   background: @primary-color;
   color: #fff;
