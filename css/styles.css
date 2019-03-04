@@ -6,6 +6,12 @@ body {
 .primary-text {
   color: #3b5998;
 }
+.btn,
+.primary-btn {
+  padding: 10px 15px;
+  border: 0;
+}
 .primary-btn {
   background: #3b5998;
+  color: #fff;
 }
