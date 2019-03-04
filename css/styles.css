@@ -25,3 +25,16 @@ h3 {
   background: #3b5998;
   color: #fff;
 }
+ul#menu {
+  list-style: none;
+}
+ul#menu li {
+  padding: 10px 0;
+}
+ul#menu li a {
+  color: #20b2aa;
+  text-decoration: none;
+}
+ul#menu li a:hover {
+  color: #000;
+}
