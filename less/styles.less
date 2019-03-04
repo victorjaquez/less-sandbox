@@ -5,6 +5,15 @@
 @secondary-color: #20b2aa;
 @line-height: 1em + 1em;
 
+// Text Color Mixin
+.text-color(@a) when (lightness(@a) >= 50%) {
+  color: black;
+} 
+
+.text-color(@a) when (lightness(@a) < 50%) {
+  color: white;
+}
+
 body {
   font-family: @font-family;
   background:@background-color;
@@ -39,7 +48,7 @@ h1, h3 {
 // extending class
 .primary-btn:extend(.btn) {
   background: @primary-color;
-  color: #fff;
+  .text-color(@primary-color)
 }
 
 // nested elements
